@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .nav-item {
+        @apply uppercase font-normal text-white text-xl duration-200 hover:scale-110;
+    }
+    .text-gradient {
+        background: linear-gradient(
+            71deg,
+            rgba(184, 106, 223, 1) 0%,
+            rgba(244, 107, 69, 1) 53%,
+            rgba(255, 147, 15, 1) 71%
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .link-nav {
+        @apply h-[40px] w-[40px] bg-white text-text  rounded-full flex justify-center items-center;
+    }
+    .section-header{
+        @apply text-text text-lg font-semibold italic
+    }
+    .section-title{
+        @apply text-text text-5xl lg:text-6xl font-bold uppercase
+    }
+
+}
